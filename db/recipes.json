@@ -1,0 +1,42 @@
+{
+  "_id":{"$oid":"53d01ddf4fbbd6de0b530013"},
+  "name":"BBQ Chicken",
+  "photo":"http://files.patiodaddiobbq.com/images/food/chicken/BasicChickenDrumsticks_1_5.jpg",
+  "ingredients":["barbeque", "chicken", "water"],
+  "directions":"1. heat grill; 2. put chicken on grill; 3. brush bbq on chicken; 4. do whatever with the water;"
+}
+{
+  "_id":{"$oid":"53d01ddf4fbbd6de0b530014"},
+  "name":"Mac-N-Cheese",
+  "photo":"http://eatathomecooks.com/wp-content/uploads/2009/06/macaroni-and-cheese-done-1024x680.jpg",
+  "ingredients":["water", "noodles", "milk", "cheese"],
+  "directions":"1. boil water; 2. cook noodles until tender; 3. add milk and cheese;"
+}
+{
+  "_id":{"$oid":"53d01ddf4fbbd6de0b530015"},
+  "name":"PB & J",
+  "photo":"http://www.theblaze.com/wp-content/uploads/2012/09/pbj.png",
+  "ingredients":["barbeque", "chicken", "water"],
+  "directions":"1. select 2 slices of bread; 2. put pb on one slice; 3. put jelly on the other slice; 4. put slices together;"
+}
+{
+  "_id":{"$oid":"53d01ddf4fbbd6de0b530016"},
+  "name":"Toast",
+  "photo":"http://upload.wikimedia.org/wikipedia/commons/a/af/DryToast.jpg",
+  "ingredients":["bread slice", "heat source"],
+  "directions":"1. put bread near heat source; 2. grab bread when it's brown"
+}
+{
+  "_id":{"$oid":"53d01ddf4fbbd6de0b530017"},
+  "name":"Fast Food",
+  "photo":"http://www.circlekrocks.com/sites/default/files/page_img_fast-food.jpg",
+  "ingredients":["car", "money", "no hope for your future"],
+  "directions":"1. drive car to fast food place; 2. give them money for fast food; 3. say goodbye to your last 10 years of life;"
+}
+{
+  "_id":{"$oid":"53d01ddf4fbbd6de0b530018"},
+  "name":"Salad",
+  "photo":"http://www.freshgourmet.com/FreshGourmet/Retail/imgs/recipes/FestiveTacoSalad.jpg",
+  "ingredients":["lettuce", "stuff", "dressing"],
+  "directions":"1. takes some lettuce; 2. throw stuff on it; 3. cover it all in dressing"
+}
