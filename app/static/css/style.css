@@ -9,3 +9,14 @@ body{
   background-color: lightgrey;
 }
 
+.recipe{
+  margin: 2.5%;
+  width: 28.3%;
+  border: solid black 2px;
+  display: inline-block;
+}
+
+img{
+  width: 120px;
+  height: 90px;
+}

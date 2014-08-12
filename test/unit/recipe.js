@@ -24,8 +24,8 @@ describe('Recipe', function(){
 
   describe('constructor', function(){
     it('should create a new Recipe object', function(){
-      var o = {photo:'http://files.patiodaddiobbq.com/images/food/chicken/BasicChickenDrumsticks_1_5.jpg', name:'bbq chicken', ingredients:'bbq, chicken, water', directions:'1. 2. 3.'};
-      var r = new Recipe(o);
+      var o = {photo:'http://files.patiodaddiobbq.com/images/food/chicken/BasicChickenDrumsticks_1_5.jpg', name:'bbq chicken', ingredients:'bbq, chicken, water', directions:'1. 2. 3.'},
+          r = new Recipe(o);
       expect(r).to.be.instanceof(Recipe);
       expect(r.photo).to.equal('http://files.patiodaddiobbq.com/images/food/chicken/BasicChickenDrumsticks_1_5.jpg');
       expect(r.name).to.equal('bbq chicken');

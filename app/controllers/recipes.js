@@ -1,6 +1,10 @@
 'use strict';
 
+var Recipe = require('../models/recipe');
+
 exports.index = function(req, res){
-  res.render('recipes/index');
+  Recipe.all(function(err, recipes){
+    res.render('recipes/index', {recipes:recipes});
+  });
 };
 
