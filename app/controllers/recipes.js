@@ -9,6 +9,8 @@ exports.index = function(req, res){
 };
 
 exports.create = function(req, res){
-  console.log(req.body);
+  Recipe.create(req.body, function(err, recipe){
+    res.render('recipes/recipe', {recipe:recipe});
+  });
 };
 

@@ -20,10 +20,12 @@
         type = $('form').attr('method'),
         url  = $('form').attr('action');
 
-    console.log(data, type, url);
+    //clearing form
+    $('input, textarea').val('');
+    hide();
 
     $.ajax({url:url, type:type, data:data, dataType:'html', success:function(html){
-      console.log(html);
+      $('#recipes').prepend(html);
     }});
 
     e.preventDefault();

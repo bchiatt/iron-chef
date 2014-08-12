@@ -1,0 +1,7 @@
+.recipe
+  img(src='#{recipe.photo}')
+  div= recipe.name
+  ul
+  each ingredient in recipe.ingredients
+    li= ingredient
+  div= recipe.directions

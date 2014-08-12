@@ -3,7 +3,7 @@
 function Recipe(o){
   this.photo = o.photo;
   this.name = o.name;
-  this.ingredients = o.ingredients.split(', ');
+  this.ingredients = o.ingredients.split(',').map(function(i){return i.trim();});
   this.directions = o.directions;
 }
 
