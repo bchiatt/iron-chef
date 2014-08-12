@@ -6,17 +6,54 @@
 }
 
 body{
+  margin: 0;
   background-color: lightgrey;
 }
 
+#recipes{
+  position: relative;
+}
+
 .recipe{
-  margin: 2.5%;
-  width: 28.3%;
+  margin: 2%;
+  width: 28%;
+  background: darkgrey;
   border: solid black 2px;
   display: inline-block;
+  padding: 3px;
 }
 
 img{
-  width: 120px;
-  height: 90px;
+  width: 100%;
+}
+
+.recipe li{
+  position: relative;
+  left: 20px;
+}
+
+#formInput{
+  position: relative;
+  height: 150px;
+}
+
+form{
+  position: relative;
+}
+
+.form {
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  top: 0;
+}
+
+.form textarea{
+  height: 70px;
+}
+
+.form button{
+  height: 45px;
+  position: absolute;
+  bottom: 20px;
 }

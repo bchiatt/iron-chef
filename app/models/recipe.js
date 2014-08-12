@@ -11,9 +11,13 @@ Object.defineProperty(Recipe, 'collection', {
   get: function(){return global.mongodb.collection('recipes');}
 });
 
+Recipe.create = function(o, cb){
+  var r = new Recipe(o);
+  Recipe.collection.save(r, cb);
+};
+
 Recipe.all = function(cb){
   Recipe.collection.find().toArray(cb);
 };
 
 module.exports = Recipe;
-

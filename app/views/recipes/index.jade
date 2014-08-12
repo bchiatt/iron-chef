@@ -1,15 +1,31 @@
 extends ../shared/template
 block content
-  h2 Recipes Page!
 
-  .wrapper
+  #formInput
+    #visibility
+      button#hide Hide Form
+      button#show Show Form
+    form(method='post', action='/recipes')
+      .form
+        input(name='name', type='text', placeholder='Chicken', autofocus=true)
+        br
+        input(name='photo', type='text', placeholder='Image URL')
+        br
+        input(name='ingredients', type='text', placeholder='chicken, water, eggs')
+      .form
+        label Directions:
+        br
+        textarea(name='directions')
+        button Add Recipe
+
+  #recipes
     each recipe in recipes
       .recipe
         img(src='#{recipe.photo}')
-        h2= recipe.name
+        div= recipe.name
         ul
         each ingredient in recipe.ingredients
           li= ingredient
-        h2= recipe.directions
+        div= recipe.directions
 
 block scripts
