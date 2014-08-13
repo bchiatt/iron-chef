@@ -49,9 +49,12 @@
 
   function filterCategory(e){
     var category = $(this).text();
-    $('.recipe .category:contains('+category+')').closest('.recipe').fadeIn();
-    $('.recipe .category:not(:contains('+category+'))').closest('.recipe').fadeOut();
-    if(category === 'All'){$('.recipe').fadeIn();}
+    if(category !== 'All'){
+      $('.recipe .category:contains('+category+')').closest('.recipe').fadeIn();
+      $('.recipe .category:not(:contains('+category+'))').closest('.recipe').fadeOut();
+    }else{
+      $('.recipe').fadeIn();
+    }
     e.preventDefault();
   }
 
