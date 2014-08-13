@@ -6,8 +6,21 @@
 }
 
 body{
-  margin: 0;
   background-color: lightgrey;
+}
+
+#formInput{
+  position: relative;
+  text-align: center;
+}
+
+.form textarea{
+  height: 70px;
+}
+
+.category{
+  display: inline;
+  margin: 20px 50px;
 }
 
 #recipes{
@@ -17,24 +30,28 @@ body{
 .recipe{
   margin: 2%;
   width: 28%;
+  vertical-align: top;
   background: darkgrey;
   border: solid black 2px;
   display: inline-block;
-  padding: 3px;
+  position: relative;
 }
 
-img{
-  width: 100%;
+.image{
+  background-size: cover;
+  height: 300px;
 }
+
 
 .recipe li{
   position: relative;
   left: 20px;
 }
 
-#formInput{
-  position: relative;
-  height: 150px;
+.white{
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 
 form{
@@ -42,18 +59,8 @@ form{
 }
 
 .form {
-  padding: 0;
   display: inline-block;
   position: relative;
-  top: 0;
 }
 
-.form textarea{
-  height: 70px;
-}
 
-.form button{
-  height: 45px;
-  position: absolute;
-  bottom: 20px;
-}

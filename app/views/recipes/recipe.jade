@@ -1,7 +1,9 @@
-.recipe
-  img(src='#{recipe.photo}')
-  div= recipe.name
-  ul
+.recipe(data-recipe-id=recipe._id.toString())
+  .image(style='background-image: url(#{recipe.photo})')
+    button.white.delete delete
+  .name= recipe.name
+  .category= recipe.category
+  ul.ingredients
   each ingredient in recipe.ingredients
     li= ingredient
-  div= recipe.directions
+  .directions= recipe.directions

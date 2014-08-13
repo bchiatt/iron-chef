@@ -3,20 +3,28 @@ block content
 
   #formInput
     #visibility
-      button#hide Hide Form
-      button#show Show Form
+      button.blue#show Show
+      button.blue#hide Hide
     form(method='post', action='/recipes')
       .form
         input(name='name', type='text', placeholder='Chicken', autofocus=true)
         br
+        select(name='category', type='dropdown', value='Breakfast')
+          option Breakfast
+          option Lunch
+          option Dinner
+        br
         input(name='photo', type='text', placeholder='Image URL')
         br
         input(name='ingredients', type='text', placeholder='chicken, water, eggs')
-      .form
-        label Directions:
         br
-        textarea(name='directions')
-        button Add Recipe
+        textarea(name='directions', placeholder='Directions')
+        br
+        button.red Add Recipe
+  ul#categories
+    li: a(href='#') Breakfast
+    li: a(href='#') Lunch
+    li: a(href='#') Dinner
 
   #recipes
     each recipe in recipes
