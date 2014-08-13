@@ -7,6 +7,7 @@
     $('form').submit(addRecipe);
     $('#recipes').on('click', '.delete', delRecipe);
     $('#categories a').click(filterCategory);
+    $('.recipe li a').click(filterIngredient);
   });
 
   function hide(){
@@ -47,10 +48,17 @@
   }
 
   function filterCategory(e){
-    console.log('clicked');
     var category = $(this).text();
     $('.recipe .category:contains('+category+')').closest('.recipe').fadeIn();
     $('.recipe .category:not(:contains('+category+'))').closest('.recipe').fadeOut();
+    if(category === 'All'){$('.recipe').fadeIn();}
+    e.preventDefault();
+  }
+
+  function filterIngredient(e){
+    var ingredient = $(this).text();
+    $('.recipe li a:not(:contains('+ingredient+'))').closest('.recipe').fadeOut();
+    $('.recipe li a:contains('+ingredient+')').closest('.recipe').fadeIn();
     e.preventDefault();
   }
 

@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Fredericka+the+Great);
 
 *{
   font-family: 'Open Sans', sans-serif;
@@ -6,7 +7,17 @@
 }
 
 body{
-  background-color: lightgrey;
+  background-color: #B5B9B9;
+}
+
+a{
+  text-decoration: none;
+}
+
+#title{
+  text-align: center;
+  font-size: 7em;
+  font-family: 'Fredericka the Great', cursive;
 }
 
 #formInput{
@@ -18,9 +29,19 @@ body{
   height: 70px;
 }
 
-.category{
+#categories {
+  height: 50px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#categories li{
+  margin: 0 20px;
   display: inline;
-  margin: 20px 50px;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Fredericka the Great', cursive;
+  color: #fe1a00;
 }
 
 #recipes{
